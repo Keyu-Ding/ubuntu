@@ -8,7 +8,7 @@
 
 #
 # The line below states we will base our new image on the Latest Official Ubuntu 
-FROM keyuding/ubuntu
+FROM ubuntu:22.04
 
 #
 # Identify the maintainer of an image
