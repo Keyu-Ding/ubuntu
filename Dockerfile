@@ -18,4 +18,8 @@ LABEL maintainer="dky0621@gmail.com"
 # Update the image to the latest packages
 RUN apt-get update && apt-get upgrade -y
 
-env PS1='\u@\h:\w\n[\!] '
+# Install packages
+RUN apt install -y vim vifm screen
+
+#prompt
+Run echo 'export PS1="\u@\h:\w\n[\!] "'>>/root/.bashrc
